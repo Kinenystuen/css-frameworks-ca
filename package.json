@@ -4,7 +4,7 @@
   "description": "A starting point for the CSS Frameworks CA project",
   "scripts": {
     "test": "echo \"We will learn more about testing in the Workflow course\" && exit 1",
-    "build": "sass src/scss/index.scss",
+    "build": "sass src/scss:dist/css",
     "watch": "sass --watch src/scss:dist/css",
     "start": "live-server",
     "dev": "npm-run-all --parallel watch start"
@@ -21,12 +21,12 @@
     "SCSS",
     "SASS"
   ],
-  "author": "Oliver Dipple <oliver.dipple@noroff.no>",
+  "author": "Kine Odden Nystuen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoroffFEU/css-frameworks-ca/issues"
+    "url": "https://github.com/Kinenystuen/css-frameworks-ca/issues"
   },
-  "homepage": "https://github.com/NoroffFEU/css-frameworks-ca#readme",
+  "homepage": "https://github.com/Kinenystuen/css-frameworks-ca",
   "dependencies": {
     "bootstrap": "^5.3.3"
   },
