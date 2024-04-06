@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogLife | Feed</title>
+    <script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../dist/css/index.css">
+    <script type="module" src="../../js/index.js"></script>
+
+    <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow position-relative z-3" data-bs-theme="dark">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">BlogLife</a>
+
+        <ul class="navbar-nav flex-row d-sm-none">
+            <li class="nav-item text-nowrap">
+                <button class="nav-link px-3 text-white" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <use xlink:href="#list"></use>
+                    </span>
+                </button>
+            </li>
+        </ul>
+        <div id="navbarSearch" class="navbar-search w-100 collapse">
+            <input class="form-control w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+        </div>
+    </header>
+    <main>
+        <div class="container-lg overflow-hidden">
+            <div class="row overflow-auto z-n1">
+                <div class="col-12 col-sm-3 col-md-3 col-xl-2 bg-light d-flex sticky-top position-relative min-vh-80">
+                    <div class="position-fixed p-1 offcanvas-sm offcanvas-end bg-body-tertiary" tabindex="-1"
+                        id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+                        <div class="dropdown">
+                            <a href="#"
+                                class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/img/Bilde_Kine.jpg" alt="" width="32" height="32"
+                                    class="rounded-circle me-2 object-fit-cover">
+                                <strong>Kine</strong>
+                            </a>
+                            <ul class="dropdown-menu text-small shadow">
+                                <li><a class="dropdown-item" href="/html/profile/">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../../index.html" title="Sign out">Sign out</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="/html/profile/index.html" class="nav-link link-body-emphasis"
+                                    aria-current="page">
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link  active">
+
+                                    Feed
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" bg-white col d-flex flex-column h-sm-100 p-0">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid m-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse gap-1" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" aria-current="page" href="#"><h1 class="h5">Feed</h1></a>
+                                    </li>
+                                </ul>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-primary me-2 dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sort
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu z-3">
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    </ul>
+                                </div>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="d-inline-flex gap-1 ms-4 mt-3">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#newPost" aria-expanded="false" aria-controls="newPost">
+                            New post
+                        </button>
+                    </div>
+                    <div class="collapse" id="newPost">
+                        <div class="card card-body m-4 jumbotron bg-body-tertiary">
+                            <div class="input-group mb-2">
+                                <span
+                                    class="input-group-text d-flex flex-column align-items-center justify-content-center bg-white">
+                                    <img src="/img/Bilde_Kine.jpg" alt="" width="32" height="32"
+                                        class="rounded-circle object-fit-cover">
+                                </span>
+                                <input type="text" class="form-control" placeholder="Title" aria-label="Title">
+                            </div>
+                            <textarea class="form-control" name="" id="" cols="" rows="5" placeholder="Whats on your mind?"></textarea>
+                            <div class="d-flex align-items-center" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            </div>
+                            <div class="d-flex justify-content-end mt-2 gap-4">
+                                <input class="form-control " type="file" id="formFile"
+                                    control-id="ControlID-33">
+                                <button class="btn btn-success rounded-pill px-3" type="button">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="feedContainer">
+                        <div class="d-flex justify-content-center align-items-center vh-60">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 py-4 p-3 border-top bg-light">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 BlogLife</p>
+
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/html/profile/index.html"
+                    class="nav-link px-2 text-body-secondary">Profile</a></li>
+            <li class="nav-item"><a href="/html/feed/index.html" class="nav-link px-2 text-body-secondary">Feed</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

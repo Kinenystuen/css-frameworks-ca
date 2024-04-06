@@ -1,0 +1,127 @@
+[
+  {
+    "users": [
+      {
+        "id": 1,
+        "name": "Kine",
+        "profileImg": "/img/Bilde_Kine.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Theo",
+        "profileImg": "/img/IMG_4220.JPG"
+      },
+      {
+        "id": 3,
+        "name": "Uno",
+        "profileImg": ""
+      },
+      {
+        "id": 4,
+        "name": "Rav",
+        "profileImg": ""
+      }
+    ],
+    "blogPosts": [
+      {
+        "name": "Kine",
+        "title": "Christmas photo",
+        "content": "Christmas and holiday, of course, there must be photos taken of the dogs together.",
+        "image": "/img/IMG_3937.jpeg",
+        "date": "2023-12-24T12:24:12",
+        "authorId": 1,
+        "id": 1,
+        "comments": [
+          {
+            "commentId": 1, 
+            "cmtAuthorId": 4,
+            "comment": "Lovely photo!",
+            "date": "2023-01-24T12:24:12",
+            "parent": 0
+          },
+          {
+            "commentId": 2,
+            "cmtAuthorId": 2,
+            "comment": "The dogs look so happy!",
+            "date": "2023-02-24T12:24:12",
+            "parent": 0
+          },
+          {
+            "commentId": 3,
+            "cmtAuthorId": 1,
+            "comment": "Thanks!",
+            "date": "2023-01-28T12:24:12",
+            "parent": 1
+          }
+        ]
+      },
+      {
+        "name": "Theo",
+        "title": "Sunny day",
+        "content": "Howdy, got to enjoy the sun in very nice weather today. Great day being a dog.",
+        "image": "/img/IMG_4220.JPG",
+        "date": "2024-03-06T12:24:12",
+        "authorId": 2,
+        "id": 2,
+        "comments": []
+      },
+      {
+        "name": "Uno",
+        "title": "Hiking",
+        "content": "Hello! Today, I went hiking with the guys, what a weather! I was lucky and got to walk freely, while the others had to struggle with leashes. There are some advantages to getting older.",
+        "image": "/img/IMG_4217.JPEG",
+        "date": "2024-01-02T13:24:12",
+        "authorId": 3,
+        "id": 3,
+        "comments": []
+      },
+      {
+        "name": "Rav",
+        "title": "Easter",
+        "content": "Enjoy",
+        "image": "/img/IMG_4266.JPEG",
+        "date": "2024-01-02T13:24:12",
+        "authorId": 4,
+        "id": 4,
+        "comments": []
+
+      },
+      {
+        "name": "Uno",
+        "title": "Sheep gathering",
+        "content": "Time to get the sheep down from the mountain :)",
+        "image": "/img/IMG_3521.jpeg",
+        "date": "2023-09-23T13:24:12",
+        "authorId": 3,
+        "id": 5,
+        "comments": []
+
+      },
+      {
+        "name": "Kine",
+        "title": "Test",
+        "content": "Up and running site is it?",
+        "image": "",
+        "date": "2024-03-24T12:24:12",
+        "authorId": 1,
+        "id": 6,
+        "comments": [
+          {
+            "commentId": 3, 
+            "cmtAuthorId": 4,
+            "comment": "Indeed",
+            "date": "2023-01-24T12:24:12",
+            "parent": 0
+          },
+          {
+            "commentId": 4,
+            "cmtAuthorId": 1,
+            "comment": "Super!",
+            "date": "2023-01-28T12:24:12",
+            "parent": 3
+          }
+        ]
+      }
+    ]
+  }
+]
