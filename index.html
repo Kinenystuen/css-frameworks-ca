@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS | Frameworks</title>
   <link rel="stylesheet" href="dist/css/index.css">
-  <link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <script type="module" src="/js/index.js"></script>
+  <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,20 +24,24 @@
     </nav>
   </header>
   <main>
-    <div class="container col-lg-5 col-sm-7 col-md-5 d-flex align-items-center justify-content-center vh-80 flex-column">
+    <div
+      class="container col-lg-5 col-sm-7 col-md-5 d-flex align-items-center justify-content-center vh-80 flex-column">
       <form action="html/profile/index.html" class="p-4 rounded bg-white">
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">
             <i class="fa-solid fa-user" style="color: #34435E;"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" control-id="ControlID-5">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1" control-id="ControlID-5">
         </div>
         <div>
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">
               <i class="fa-solid fa-lock" style="color: #34435E;"></i>
             </span>
-            <input type="password" id="inputPassword6" class="form-control" minlength="8" maxlength="20" placeholder="Your password" aria-label="Password" aria-describedby="passwordHelpBlock" control-id="ControlID-5">
+            <input type="password" id="inputPassword6" class="form-control" minlength="8" maxlength="20"
+              placeholder="Your password" aria-label="Password" aria-describedby="passwordHelpBlock"
+              control-id="ControlID-5">
           </div>
           <div id="passwordHelpBlock" class="form-text">
             Your password must be 8-20 characters long.
