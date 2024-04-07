@@ -1,4 +1,4 @@
-import { fetchFeedData } from "../api/feed.js";
+import { fetchData } from "../api/feed.js";
 import { clearHTML } from "../utils/clearHTML.js";
 
 const profileContainer = document.getElementById("profileContainer");
