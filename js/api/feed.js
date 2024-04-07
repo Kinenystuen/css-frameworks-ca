@@ -21,4 +21,4 @@ export async function fetchData() {
         console.log("Error: " + error);
     }
 }
-fetchFeedData();
+fetchData();
