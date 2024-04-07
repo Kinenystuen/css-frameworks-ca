@@ -12,7 +12,7 @@ export async function fetchData() {
             const data = await response.json();
             if (currentUrl.includes("feed/index.html") || (currentUrl.includes("html/feed"))) {
                 displayFeed(data);
-            } if (currentUrl.includes("profile/index.html" || (currentUrl.includes("html/profile"))) {
+            } if (currentUrl.includes("profile/index.html") || (currentUrl.includes("html/profile"))) {
                 displayProfile(data);   
             }
             return data;
